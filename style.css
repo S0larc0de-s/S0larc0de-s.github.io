@@ -13,7 +13,6 @@ p{
 #logo{
     margin:0px;
     padding:10px;
-    text-align: right;
     font-family: Matemasie, "Trebuchet MS";
     text-shadow: 1px 1px 0 #8F1402, 2px 2px 0 #8F1402, 3px 3px 5px #8F1402 ;
    
@@ -162,4 +161,131 @@ img{
     font-size: 25px;
     margin: 0;
     text-align: left;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section Styling */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #c04574;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.hero button {
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Categories Section Styling */
+.categories {
+    padding: 2rem;
+    text-align: center;
+}
+
+.categories h2 {
+    margin-bottom: 1rem;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category-item {
+    background: #f4f4f4;
+    padding: 1rem;
+    flex: 1;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+/* Featured Products Section Styling */
+.featured-products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.featured-products h2 {
+    margin-bottom: 1rem;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-item {
+    background: #f4f4f4;
+    padding: 1rem;
+    flex: 1;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
 }

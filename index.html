@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S0larSyle LTD</title>
+    <title>S0larSyleLTD</title>
 </head>
 <link rel="stylesheet" href="style.css">
 <script src="app.js"></script>
@@ -23,30 +23,20 @@
          </nav>
     </header>
     <main>
-        <div id="main-content">
-            <aside>
-                <section>
-                    <h4> Filter by month </h4>
-                    <nav>
-                        <ul>
-                            <li><a href="">Filter for Jan </a></li>
-                            <li><a href="">Filter for Feb</a></li>
-                            <li><a href="">Filter for Mar</a></li>
-                        </ul>
-                    </nav>
-                </section>
-                <section>
-                    <h4>Filter by category</h4>
-                    <nav>
-                        <ul>
-                            <li><a href="">Kittens</a></li>
-                            <li><a href="">Cats</a></li>
-                            <li><a href="">Dogs</a></li>
-                            <li><a href="">Hedgehogs</a></li>
-                        </ul>
-                    </nav>
-                </section>
-            </aside>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2> Shop </h2>
+            <a href="#"> New In </a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Sale</a>
+        </div>
+        <span class="openbtn" onclick="openNav()">&#9776;</span>
+        <div id="main">
+            <!-- Your main content goes here -->
+        </div>
+        <script src="script.js"></script>
+        
             <div>
                 <article>
                     <header>

@@ -22,6 +22,34 @@
             </ul>
          </nav>
     </header>
+
+        <!-- icons [Font Awesome CDN] -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Add your CSS styles here */
+    .icon-bar {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      gap: 20px;
+    }
+    .icon-bar a {
+      text-decoration: none;
+      color: black;
+      font-size: 24px;
+    }
+  </style>
+</head>
+  
+<body>
+  <div class="icon-bar">
+    <a href="#" title="Search"><i class="fas fa-search"></i></a>
+    <a href="#" title="Basket"><i class="fas fa-shopping-basket"></i></a>
+    <a href="#" title="Wishlist"><i class="fas fa-heart"></i></a>
+  </div>
+</body>
+
     <main>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -37,7 +65,7 @@
         
           <!-- Hero Section -->
           <section class="hero">
-            <h1>Welcome to S0larStyle</h1>
+            <h1>Choose to S0lar!</h1>
             <p>Otherwordly Fashion.</p>
             <button>Shop Now</button>
         </section>
@@ -58,16 +86,16 @@
             <h2>Featured Collections</h2>
             <div class="product-grid">
                 <div class="product-item">S0lar Staples 
-                    <img src="images/Designer.png" alt="S0lar Staples ">
+                    <img src="images/S0lar Staples.png" alt="S0lar Staples ">
                 </div>
                 <div class="product-item">S0lar Into Autumn
-                    <img src="product2.jpg" alt="S0lar Into Autumn">
+                    <img src="images/Autumn.png" alt="S0lar Into Autumn">
                 </div>
                 <div class="product-item">S0lar Apocalypse
-                    <img src="product3.jpg" alt="S0lar Apocalypse">
+                    <img src="images/Apocalypse.png" alt="S0lar Apocalypse">
                 </div>
                 <div class="product-item">It's a S0lar Summer
-                    <img src="product4.jpg" alt="It's a S0lar Summer">
+                    <img src="images/Summer.png" alt="It's a S0lar Summer">
                 </div>
             </div>
         </section>
@@ -78,13 +106,10 @@
 
 
         <hr>
-        <h2> Sign up for our newsletter!</h2>
+        <h2> Become a S0lar member today and get 10% off!</h2>
         <form action="" method="">
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name= "first_name" required>
-            <br>
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name= "last_name" required>
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name= "full_name" required>
             <br>
 
             <label for="email">Email:</label>
@@ -95,11 +120,7 @@
             <input type="password" name="password" id="password">
             <br>
 
-            <input type="checkbox"  id="subscribe"  name="subscribe">
-            <label for="subscribe">Subscribe to our newsletter!</label>
-            <br>
-
-            <input type="submit" value="Send"
+            <input type="submit" value="Sign Up"
 
         </form>
         <hr>
@@ -108,20 +129,26 @@
     
     
     <footer> 
-        <h2> BrightBlogSite </h2>
         <section>
             <nav>
                 <ul id="footer-ul">
                     <div>  
-                        <li><a href="">Home</a></li>
+                        <h2> S0larStyle </h2>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Contact</a></li>
-                        <li><a href="">Careers</a></li> 
+                        <li><a href="">Careers</a></li>
                     </div>
                     <div>
-                        <li><a href="">Privacy Policy</a></li>
+                        <h2> Information </h2>
                         <li><a href="">T&Cs</a></li>
+                        <li><a href="">Privacy Policy</a></li>
                         <li><a href="">Cookie Policy</a></li>
+                    </div>
+                    <div>
+                        <h2> Help & FaQs </h2>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Delivery</a></li>
+                        <li><a href="">Size Quide</a></li>
                     </div>
                   
             </ul>

@@ -9,7 +9,14 @@
 <script src="app.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wdth,wght@125,700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+
+
 <body>
     <header>
         <!-- the content of the header goes here -->
@@ -21,6 +28,18 @@
                 <li><a href="" class="navbutton">Contact</a></li>
             </ul>
          </nav>
+
+         <span class="openbtn" onclick="openNav()">&#9776;</span>
+         <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2> Shop </h2>
+            <a href="#"> New In </a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Sale</a>
+        </div>
+       
+
     </header>
 
         <!-- icons [Font Awesome CDN] -->
@@ -36,30 +55,21 @@
     }
     .icon-bar a {
       text-decoration: none;
-      color: black;
+      color: rgb(255, 255, 255);
       font-size: 24px;
     }
   </style>
 </head>
   
 <body>
-  <div class="icon-bar">
+ <div class="icon-bar">
     <a href="#" title="Search"><i class="fas fa-search"></i></a>
     <a href="#" title="Wishlist"><i class="fas fa-heart"></i></a>
     <a href="#" title="Basket"><i class="fas fa-shopping-basket"></i></a>
   </div>
 </body>
 
-    <main>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <h2> Shop </h2>
-            <a href="#"> New In </a>
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Sale</a>
-        </div>
-        <span class="openbtn" onclick="openNav()">&#9776;</span>
+    <main>     
         <div id="main">
             <!-- Your main content goes here -->
         
@@ -67,9 +77,9 @@
           <section class="hero">
             <h1>Choose to S0lar!</h1>
             <p>Otherwordly Fashion.</p>
-            <button>Shop Now</button>
+            <button id="shop-now-btn">Shop Now</button>
         </section>
-
+        
         <!-- Product Categories -->
         <section class="categories">
             <h2>Shop by Category</h2>
@@ -107,7 +117,7 @@
 
         <hr>
         <h2> Become a S0lar member today and get 10% off!</h2>
-        <form action="" method="">
+        <form id="form" action="" method="">
             <label for="full_name">Full Name:</label>
             <input type="text" id="full_name" name= "full_name" required>
             <br>
@@ -120,10 +130,10 @@
             <input type="password" name="password" id="password">
             <br>
 
-            <input type="submit" value="Sign Up"
+            <input id="signup" type="submit" value="Sign Up"
 
         </form>
-        <hr>
+        
 
     </main>
     
@@ -155,7 +165,7 @@
         </section>
     </footer>
     
-    <footer>
+    <footer id="last-footer">
         <p>&copy; 2024 S0larStyleLTD. All rights reserved.</p>
     </footer>
 

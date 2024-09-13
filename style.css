@@ -1,9 +1,21 @@
 
 body{
-    background-color:#FFFFE4;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#eeaf92;
+    font-family: Space Grotesk;
     margin: 0px;
     font-size: 1.5vw;
+      
+}
+
+main{
+    font-family: Space Grotesk;
+}
+
+#shop-now-btn{
+    color: #eeaf92;
+    background-color: #c04574;
+    font-family: Space Grotesk  ;
+    size: 20%;
 }
 
 p{
@@ -13,8 +25,8 @@ p{
 #logo{
     margin:0px;
     padding:10px;
-    font-family: Matemasie, "Trebuchet MS";
-    text-shadow: 1px 1px 0 #8F1402, 2px 2px 0 #8F1402, 3px 3px 5px #8F1402 ;
+    font-family: Kalnia Glaze;
+    text-shadow: 1px 1px 0 #ffffff, 2px 2px 0 #ffffff, 3px 3px 5px #ffffff ;
    
     
 }
@@ -24,7 +36,7 @@ ul{
 }
 
 body > header {
-    background-color:#B17261;
+    background-color:#24162e;
     color: white;
     display: flex;
     align-items: center;
@@ -33,6 +45,7 @@ body > header {
 
 #nav-ul{
     display: flex;
+    font-family: Space Grotesk;
 }
 
 #nav-ul>li{
@@ -49,8 +62,9 @@ body>header>nav>ul{
     color: white;
     text-decoration: none;
     padding: 10px;
-    border: 1px solid white;
-    border-radius: 10%;
+    text-align: center;
+    display: flex;
+
 }
 
 body> main  article {
@@ -81,8 +95,9 @@ h2{
 }
 
 body > footer { 
-    background-color:#8F1402;
+    background-color:#87314e;
     display: flex;
+    font-family: Space Grotesk;
 }
 
 img{
@@ -92,15 +107,84 @@ img{
 #footer-ul{
     display: flex;
     list-style: none;
+    font-family: Space Grotesk;
 }
 
-#footer-ul> div > li {
+#footer-ul> div > {
+    margin-right: 20px;
+}
+
+#footer-ul > div > h2 {
+    margin-right: 35px;
+    margin-left: 35px;
+    font-size: 18px;
+    text-align:center;
+}
+
+#footer-ul > div > li {
     margin-left: 12px;
 }
 
 #footer-ul > div > li > a {
     color: white;
     text-decoration: none;
+    font-size: 14px;
+}
+
+#signup{
+    font-family: Space Grotesk;
+}
+
+#form{
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 1px; /* Add gap between elements */
+    max-width: 300px;
+    
+}
+
+#form label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1em;
+}
+
+#form input[type="text"],
+#form input[type="email"],
+#form input[type="password"],
+#form input[type="submit"] {
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#signup {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #512645;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#signup:hover {
+    background-color: #6e1157;
+}
+
+#last-footer {
+    font-size: 13px;
+    font-style: italic;
+    color: #87314e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #eeaf92; 
+    display: flex;
 }
 
 /* The side navigation menu */
@@ -115,6 +199,7 @@ img{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    font-family: Space Grotesk;
 }
 
 /* The navigation menu links */
@@ -142,12 +227,16 @@ img{
 
 /* Style the open button */
 .openbtn {
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
-    background-color: #111;
     color: white;
     padding: 10px 15px;
     border: none;
+    margin-left: auto;
+}
+
+.sidenav.open{
+    background-color: #df405a;
 }
 
 #main {
@@ -206,23 +295,24 @@ header nav ul li a {
 
 /* Hero Section Styling */
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    color: #c04574;
+    background: url('images/background.png') no-repeat center center/cover;
+    color: #eeaf92;
     text-align: center;
-    padding: 4rem 0;
+    padding: 5rem 0;
+    font: Space Grotesk;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin: 1rem 0;
 }
 
 .hero button {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     background: #333;
     color: #fff;
     border: none;
@@ -250,6 +340,7 @@ header nav ul li a {
     flex: 1;
     margin: 0.5rem;
     text-align: center;
+    border-radius:10px ;
 }
 
 /* Featured Products Section Styling */
@@ -268,11 +359,12 @@ header nav ul li a {
 }
 
 .product-item {
-    background: #f4f4f4;
+   
     padding: 1rem;
     flex: 1;
     margin: 0.5rem;
     text-align: center;
+    border-radius: 10%;
 }
 
 .product-item img {
@@ -280,6 +372,8 @@ header nav ul li a {
     height: auto;
     display: block;
     margin-bottom: 0.5rem;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px #311e3e
 }
 
 /* Maintain the layout of the grid items */

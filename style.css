@@ -282,6 +282,15 @@ header nav ul li a {
     margin-bottom: 0.5rem;
 }
 
+/* Maintain the layout of the grid items */
+.category-grid a, .product-grid a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 /* Footer Styling */
 footer {
     background: #333;
